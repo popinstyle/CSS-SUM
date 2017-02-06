@@ -1,0 +1,24 @@
+/*css命名规范
+编程风格:单一的css文件，用以下的"大注释块"分割每个部分
+用 @ + 关键字 单独注释，更具意义，便于以后的维护,以及别人修改我们的代码
+*/
+
+/* @group grneral styles
+	一般性样式
+*/
+
+/* @group helper styles
+	辅助样式
+*/
+
+/* @group page structure styles
+	页面结构
+*/
+
+/* @group page components styles
+	页面组件
+*/
+
+/* @group overrides
+	样式覆盖
+*/
