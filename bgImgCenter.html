@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>背景图片居中</title>
+<style type="text/css">
+/*第一种垂直水平居中的方法*/
+.bg{
+	width: 300px;
+	height: 50px;
+	background:url("./images.png") no-repeat center;
+}
+.bg{
+	width: 300px;
+	height: 50px;
+	background: url("./images.png") no-repeat 50%;
+}
+/*链接 styles*/
+a.tooltip{
+	position: relative;
+}
+a.tooltip span{
+	display:none;
+}
+a.tooltip:hover span{
+	display: block;
+	position: absolute;
+	top: 1em;
+	left: 2em;
+}
+a.tooltip:hover span,a.tooptip:focus span{
+	display:block;
+	position: absolute;
+	top: 1em;
+	left: 2em;
+	padding: 0.2em 0.6em;
+	border: 1px solid #996633;
+	background-color: #FFFF66;
+	color: #000;
+}
+</style>
+</head>
+<body>
+<!-- <div class="bg"></div> -->
+<p>
+	<a href="http://www.baidu.com" class="tooltip">
+	Andy Budd
+	<span>(This website rocks)</span>
+	</a>
+	is a web developer based in Brighton England.
+</p>
+</body>
+</html>
