@@ -16,11 +16,11 @@
 	background: url("./images.png") no-repeat 50%;
 }
 /*链接 styles*/
-a.tooltip{
+/*a.tooltip{
 	position: relative;
 }
 a.tooltip span{
-	display:none;
+	display:none;	
 }
 a.tooltip:hover span{
 	display: block;
@@ -37,17 +37,84 @@ a.tooltip:hover span,a.tooptip:focus span{
 	border: 1px solid #996633;
 	background-color: #FFFF66;
 	color: #000;
+}*/
+/*三列布局 内容不等高，等高盒子 style*/
+.wrapper{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.box{
+	width: 250px;
+	margin-left: 20px;
+	float: left;
+	display: inline;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 520px;
+	padding-top: 20px;
+	margin-bottom: -500px;
+	border-radius: 20px;
+	background-color: #eee;
+}
+.bottom{
+	position: absolute;
+	bottom: 0;
+	height: 20px;
+	width: 290px;
+	margin-left: -20px;
+	border-radius: 20px;
+}
+
+/*CSS3 创建等高文本列*/
+.col{
+	-moz-column-count:3;
+	-moz-column-width:14em;
+	-moz-column-gap:2em;
+	-moz-column-rule:1px solid #ccc;
+	-webkit-column-count:3;
+	-webkit-column-width:14em;
+	-webkit-column-gap:2em;
+	-webkit-column-rule:1px solid #ccc;
+	column-count:3;
+	column-width:14em;
+	column-gap:2em;
+	column-rule:1px solid #ccc;
 }
 </style>
 </head>
 <body>
 <!-- <div class="bg"></div> -->
-<p>
+
+<!-- <p>
 	<a href="http://www.baidu.com" class="tooltip">
 	Andy Budd
 	<span>(This website rocks)</span>
 	</a>
 	is a web developer based in Brighton England.
-</p>
+</p> -->
+
+<div class="wrapper">
+	<div class="box">
+		<h1>Andy Budd</h1>
+		<p>等哈手机法国队和</p>
+		<div class="bottom"></div>
+	</div>
+	<div class="box">
+		<h1>Rutter</h1>
+		<p>等哈手机法国队和辅导书国际饭店是否该业务业务诶费用无力否</p>
+		<div class="bottom"></div>
+	</div>
+	<div class="box">
+		<h1>Keith</h1>
+		<p>等哈手机法国队和辅导书国际饭店是否该业务业务诶费用无力否</p>
+		<div class="bottom"></div>
+	</div>
+</div>
+
+<h1>Secrates</h1>
+<div class="col">
+	<p>Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.</p>
+</div>
 </body>
 </html>
